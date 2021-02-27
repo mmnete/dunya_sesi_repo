@@ -8,6 +8,7 @@ public class MainActivity extends AppCompatActivity {
 
     int myNumber = 5;
     int myNumber1 = 10;
+    int hewNumber = 100;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
