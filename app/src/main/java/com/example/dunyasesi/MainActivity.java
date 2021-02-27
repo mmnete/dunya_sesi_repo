@@ -10,7 +10,6 @@ public class MainActivity extends AppCompatActivity {
     int myNumber1 = 10;
     int hewNumber = 100;
     int newChangeNumber = 1000000;
-
     // hey the code here does not work
 
     @Override
