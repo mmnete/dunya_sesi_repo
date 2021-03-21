@@ -26,8 +26,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        registerButton = findViewById(R.id.registerButton);
         loginButton = findViewById(R.id.loginButton);
-        loginEmailEditText = findViewById(R.id.emailEditText);
+        forgotPasswordButton = findViewById(R.id.forgotPasswordButton);
+        loginEmailEditText = findViewById(R.id.loginEmailEditText);
 
         mySharedPref = getSharedPreferences(mySharedPrefFileName,  Context.MODE_PRIVATE);
 
@@ -42,6 +44,22 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        registerButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+            public void onClick(View view) {
+                navigateToRegisterPage();
+            }
+        });
+
+        forgotPasswordButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navigateToForgotPasswordPage();
+            }
+        });
+
+
     }
 
 
@@ -68,5 +86,21 @@ public class MainActivity extends AppCompatActivity {
         } else {
             return true;
         }
+    }
+
+    private void navigateToRegisterPage () {
+
+        final Intent i = new Intent(getApplicationContext(), RegisterActivity.class);
+        startActivity(i);
+        finish();
+
+    }
+
+    private void navigateToForgotPasswordPage () {
+
+        final Intent i = new Intent(getApplicationContext(), ForgotPasswordActivity.class);
+        startActivity(i);
+        finish();
+
     }
 }
