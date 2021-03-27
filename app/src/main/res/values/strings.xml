@@ -14,4 +14,7 @@
     <string name="register_button_text">Register</string>
     <string name="login_button_text">Login</string>
     <string name="forgot_password_button_text">Forgot Password</string>
+    <string name="title_activity_explore">Explore</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>
