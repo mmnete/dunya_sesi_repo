@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-// login page
+// this is login page
 public class MainActivity extends AppCompatActivity {
 
     Button loginButton;
