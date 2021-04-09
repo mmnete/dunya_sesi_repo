@@ -7,23 +7,20 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 
 import com.example.dunyasesi.R;
 
 /**
  * A placeholder fragment containing a simple view.
  */
-public class NewUploadFragment extends Fragment {
+public class MyNetworkFragment extends Fragment {
 
     private static final String ARG_SECTION_NUMBER = "section_number";
 
 
-    public static NewUploadFragment newInstance(int index) {
-        NewUploadFragment fragment = new NewUploadFragment();
+    public static MyNetworkFragment newInstance(int index) {
+        MyNetworkFragment fragment = new MyNetworkFragment();
         Bundle bundle = new Bundle();
         bundle.putInt(ARG_SECTION_NUMBER, index);
         fragment.setArguments(bundle);
@@ -39,9 +36,7 @@ public class NewUploadFragment extends Fragment {
     public View onCreateView(
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_new_upload, container, false);
-        final TextView textView = root.findViewById(R.id.section_label);
-        textView.setText("New Upload Fragment");
+        View root = inflater.inflate(R.layout.fragment_my_network, container, false);
         return root;
     }
 }

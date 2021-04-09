@@ -18,4 +18,17 @@
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
     <string name="settings_button">settings</string>
+    <string name="logout_button">logout</string>
+    <string name="update_username_button">update username</string>
+    <string name="update_caption_button">update caption</string>
+    <string name="update_banner_button">update banner</string>
+    <string name="update_email_button">update email</string>
+    <string name="update_password_button">update password</string>
+    <string name="settings_back_button">back</string>
+    <string name="delete_account_button">delete account</string>
+    <string name="profile_settings_title">profile settings</string>
+    <string name="new_request_button">Requests</string>
+    <string name="my_network_title">My Network</string>
+    <string name="network_search">Search network ...</string>
+    <string name="chat_search">Search chats ...</string>
 </resources>

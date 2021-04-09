@@ -2,85 +2,40 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.main.ProfileFragment">
-
-    <ImageView
-        android:id="@+id/userProfileImage"
-        android:scaleType="centerCrop"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="3"/>
+    tools:context=".ProfileSettingsActivity">
 
     <TextView
-        android:id="@+id/userBannerUpdateError"
+        android:id="@+id/profileSettingsTitle"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:textColor="#e4000f"
-        android:text="mmnete"
-        android:layout_marginLeft="10dp"/>
-
-    <Button
-        android:id="@+id/updateBannerButton"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="@string/update_banner_button"
-        android:background="@color/colorPrimary"
-        android:textColor="#ffff"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginRight="2dp"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:layout_gravity="end"/>
+        android:text="@string/profile_settings_title"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"/>
 
     <EditText
-    android:id="@+id/userName"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1"
-    android:text="mmnete"
-    android:layout_marginLeft="10dp"/>
-
-    <TextView
-        android:id="@+id/userNameUpdateError"
+        android:id="@+id/userEmail"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:textColor="#e4000f"
-        android:text="mmnete"
-        android:layout_marginLeft="10dp"/>
-
-    <Button
-        android:id="@+id/updateUsernameButton"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="@string/update_username_button"
-        android:background="@color/colorPrimary"
-        android:textColor="#ffff"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginRight="2dp"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:layout_gravity="end"/>
+        android:text="mmnete"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"/>
 
     <EditText
-        android:id="@+id/userCaption"
+        android:id="@+id/userConfirmEmail"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:text="mmnete"
+        android:textSize="30dp"
         android:layout_marginLeft="10dp"/>
 
     <TextView
-        android:id="@+id/userCaptionUpdateError"
+        android:id="@+id/userEmailUpdateError"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.5"
@@ -89,11 +44,11 @@
         android:layout_marginLeft="10dp"/>
 
     <Button
-        android:id="@+id/updateCaptionButton"
+        android:id="@+id/updateEmailButton"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="@string/update_caption_button"
+        android:text="@string/update_email_button"
         android:background="@color/colorPrimary"
         android:textColor="#ffff"
         android:layout_marginTop="5dp"
@@ -101,37 +56,82 @@
         android:layout_marginRight="2dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:layout_gravity="end"/>
+        android:layout_gravity="end"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/userNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="mmnete"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/userConfirmNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="mmnete"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/userPasswordUpdateError"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:textColor="#e4000f"
+        android:text="mmnete"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/updatePasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/update_password_button"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="end"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/settingsBackButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/settings_back_button"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:textSize="20dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2" />
+        android:layout_weight="4" />
 
     <Button
-        android:id="@+id/settingsButton"
+        android:id="@+id/deleteAccountButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="@string/settings_button"
-        android:background="@color/colorPrimary"
-        android:textColor="#ffff"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginRight="2dp"
-        android:textSize="10dp"/>
-
-    <Button
-        android:id="@+id/logoutButton"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="@string/logout_button"
+        android:text="@string/delete_account_button"
         android:background="#e4000f"
         android:textColor="#ffff"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
-        android:textSize="10dp"/>
+        android:textSize="20dp"/>
+
 
 </LinearLayout>
